@@ -6,6 +6,12 @@
              mc:Ignorable="d"
              x:Class="StylesAndResources.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
+                <Setter Property="FontSize" Value="Large"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -6,16 +6,7 @@
              mc:Ignorable="d"
              x:Class="StylesAndResources.MainPage">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
-                <Setter Property="FontSize" Value="Large"></Setter>
-                <Setter Property="FontAttributes" Value="Bold"></Setter>
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
+   
     <StackLayout>
         <Button Text="¡Estilízame!"
                 HeightRequest="200"></Button>
@@ -36,5 +27,7 @@
             <Button Text="Button 3"
                     TextColor="LimeGreen"></Button>
         </StackLayout>
+        <Button Text="Página estilos dinamicos"
+                Clicked="DynamicStylesClicked"></Button>
     </StackLayout>
 </ContentPage>

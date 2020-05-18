@@ -16,6 +16,12 @@ namespace StylesAndResources
         public MainPage()
         {
             InitializeComponent();
+
+        }
+
+        private void DynamicStylesClicked (object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DynamicStylePage());
         }
     }
 }
