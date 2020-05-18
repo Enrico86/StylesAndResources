@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StylesAndResources.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
+                <Setter Property="FontSize" Value="Large"></Setter>
+                <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <Button Text="¡Estilízame!"
+                HeightRequest="200"></Button>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Button"
+                           x:Key="btnAqua">
+                        <Setter Property="FontSize" Value="Micro"></Setter>
+                        <Setter Property="BackgroundColor" Value="Aqua"></Setter>
+                        <Setter Property="TextColor" Value="Red"></Setter>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Button Text="Button 1"></Button>
+            <Button Text="Button 2"
+                    Style="{StaticResource btnAqua}"></Button>
+            <Button Text="Button 3"
+                    TextColor="LimeGreen"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
